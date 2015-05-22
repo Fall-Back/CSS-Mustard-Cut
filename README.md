@@ -1,2 +1,4 @@
-# CSS-Mustard-Cut
-Cutting the Mustard without Javascript
+CSS Only Mustard Cut
+====================
+
+Cutting the Mustard without Javascript.
