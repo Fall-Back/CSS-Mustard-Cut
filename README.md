@@ -30,15 +30,15 @@ The M3 Cut (Much More Modern)
 
 ~~~
 <!-- IE10+ -->
-<link rel="stylesheet" href="css/your-stylesheet.css" 
-  media="only screen and (-ms-high-contrast: none)">
+<!-- Chrome 29+, Opera 16+, Safari 6.1+, iOS 7+, Android 4.4+, IE10+ -->
+<link rel="stylesheet" href="css/your-stylesheet.css"
+  media="only screen and (-webkit-min-device-pixel-ratio:0) and (min-color-index:0), (-ms-high-contrast: none)">
 <!-- FF29+ -->
 <link rel="stylesheet" href="css/your-stylesheet.css"
   media="only all and (min--moz-device-pixel-ratio:0) and (min-resolution: 3e1dpcm)">
-<!-- Chrome 29+, Opera 16+, Safari 6.1+, iOS 7+, Android 4.4+ -->
-<link rel="stylesheet" href="css/your-stylesheet.css"
-  media="only screen and (-webkit-min-device-pixel-ratio:0) and (min-color-index:0)">
+
 ~~~
 
 [Can I Use](http://caniuse.com/#compare=ie+10,firefox+29,chrome+29,safari+6.1,opera+16,ios_saf+7.0-7.1,android+4.4)
 
+[Test page](http://fall-back.github.io/test/support-m3.html)
