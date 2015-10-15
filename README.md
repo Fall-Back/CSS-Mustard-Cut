@@ -23,6 +23,8 @@ The Original Cut
   media="only screen and (-webkit-min-device-pixel-ratio:0) and (min-color-index:0)">
 ~~~
 
+[Test page](http://fall-back.github.io/test/support.html)
+
 The M3 Cut (Much More Modern)
 -----------------------------
 
