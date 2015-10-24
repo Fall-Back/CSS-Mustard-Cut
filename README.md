@@ -1,4 +1,4 @@
-ICSS Only Mustard Cut
+CSS Only Mustard Cut
 ====================
 
 Cutting the Mustard without Javascript.
