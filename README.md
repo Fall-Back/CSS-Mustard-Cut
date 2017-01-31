@@ -28,20 +28,23 @@ The Original Cut
 The M3 Cut (Much More Modern)
 -----------------------------
 
-~~~
-<!-- Chrome 29+, Opera 16+, Safari 6.1+, iOS 7+, Android ~4.4+, IE10+ (including Edge) -->
-<link rel="stylesheet" href="css/your-stylesheet.css"
-  media="only screen and (-webkit-min-device-pixel-ratio:0) and (min-color-index:0), (-ms-high-contrast: none)">
-<!-- FF29+ -->
-<link rel="stylesheet" href="css/your-stylesheet.css"
-  media="only all and (min--moz-device-pixel-ratio:0) and (min-resolution: 3e1dpcm)">
+~~~  
+<!--
+    Chrome 29+, Opera 16+, Safari 6.1+, iOS 7+, Android ~4.4+, IE 10+ (including Edge)
+    FF29+ 
+-->
+<link rel="stylesheet" href="css/mq-test.css" media="
+    only all and (-webkit-min-device-pixel-ratio:0) and (min-color-index:0), (-ms-high-contrast: none),
+    only all and (min--moz-device-pixel-ratio:0) and (min-resolution: 3e1dpcm)
+">
 ~~~
 
 [Can I Use](http://caniuse.com/#compare=ie+10,firefox+29,chrome+29,safari+6.1,opera+16,ios_saf+7.0-7.1,android+4.4) (Yay, Flexbox!)
 
 [Test page](http://fall-back.github.io/test/support-m3.html)
 
-Note that if you're combining the links media queries into one I tried putting in line breaks to make it more readable, but this cause IE9 to ignore the query and apply the styles, so DON'T ADD LINE BREAKS.
+<s>Note that if you're combining the links media queries into one I tried putting in line breaks to make it more readable, but this cause IE9 to ignore the query and apply the styles, so DON'T ADD LINE BREAKS.</s>
+ - For some reason I can't recreate the above. Something else may have been the cause of this problem.
 
 ---
 
