@@ -30,12 +30,16 @@ The M3 Cut (Much More Modern)
 
 ~~~  
 <!--
-    IE 10+ (including Edge)
+    Print (Edge doesn't apply to print otherwise)
+    Edge
+    IE 10, 11
     Chrome 29+, Opera 16+, Safari 6.1+, iOS 7+, Android ~4.4+
-    FF29+
+    FF29+   
 -->
 <link rel="stylesheet" href="css/mq-test.css" media="
-    only all and (-ms-high-contrast: active), only all and (-ms-high-contrast: none),
+    only print,
+    only all and (-ms-high-contrast: none), only all and (-ms-high-contrast: active),
+    only all and (pointer: fine), only all and (pointer: coarse), only all and (pointer: none),
     only all and (-webkit-min-device-pixel-ratio:0) and (min-color-index:0),
     only all and (min--moz-device-pixel-ratio:0) and (min-resolution: 3e1dpcm)
 ">
