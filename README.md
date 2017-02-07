@@ -31,8 +31,8 @@ The M3 Cut (Much More Modern)
 ~~~  
 <!--
     Print (Edge doesn't apply to print otherwise)
-    Edge
     IE 10, 11
+    Edge
     Chrome 29+, Opera 16+, Safari 6.1+, iOS 7+, Android ~4.4+
     FF29+   
 -->
@@ -49,7 +49,7 @@ The M3 Cut (Much More Modern)
 
 [Test page](http://fall-back.github.io/test/support-m3.html)
 
-To remove IE 10 and 11 support, remove the 3rd line (`only all and (pointer: fine), only all and (pointer: coarse), only all and (pointer: none)`).
+To remove IE 10 and 11 support, remove the 2nd line (`only all and (-ms-high-contrast: none), only all and (-ms-high-contrast: active),`).
 
 <s>Note that if you're combining the links media queries into one I tried putting in line breaks to make it more readable, but this cause IE9 to ignore the query and apply the styles, so DON'T ADD LINE BREAKS.</s>
  - For some reason I can't recreate the above. Something else may have been the cause of this problem.
