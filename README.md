@@ -85,3 +85,81 @@ Note the Android versions aren't certain because it actually depends on the WebK
 
 ---
 
+Mix and Match
+-------------
+
+For clarity, you can mix and match the queries for more customised support.
+
+Print
+~~~
+only print
+~~~
+
+
+IE 9+, FF 8+, Opera 12, Chrome 29+, Android ~4.4+
+~~~
+only screen and (min-resolution: 0.1dpcm),
+~~~
+
+
+Chrome 29+, Opera 16+, Safari 6.1+, iOS 7+, Android ~4.4+
+~~~
+only screen and (-webkit-min-device-pixel-ratio:0) and (min-color-index:0)
+~~~
+
+
+IE 10, 11
+~~~
+only all and (-ms-high-contrast: none), only all and (-ms-high-contrast: active)
+~~~
+
+Edge, Chrome 39+, Opera 26+, Safari 9+, iOS 9+, Android ~5+*, Android UCBrowser 11.8+**
+*  (according to caniuse, though it works on ~4.3+ if using Chrome or Samsung)
+** (according to caniuse though currently untested. Does not work on Android UCBrowser 11.3.2)
+~~~
+only all and (pointer: fine), only all and (pointer: coarse), only all and (pointer: none),
+~~~
+
+
+FF29+
+~~~
+only all and (min--moz-device-pixel-ratio:0) and (min-resolution: 3e1dpcm)
+~~~
+
+
+FF47+
+~~~
+only all and (min--moz-device-pixel-ratio:0) and (display-mode:browser), (min--moz-device-pixel-ratio:0) and (display-mode:fullscreen)
+~~~
+
+
+UCBrowser (JS user-agent sniff*)
+~~~
+if (navigator.userAgent.indexOf('UCBrowser') > -1) {
+  var link  = document.createElement('link');
+  link.rel  = 'stylesheet';
+  link.href = 'your-stylesheet.css';
+  document.getElementsByTagName('head')[0].appendChild(link);
+}
+~~~
+
+
+Opera Mini (JS user-agent sniff*)
+~~~
+if (navigator.userAgent.indexOf('Opera Mini') > -1 || navigator.userAgent.indexOf('OPiOS') > -1) {
+  var link  = document.createElement('link');
+  link.rel  = 'stylesheet';
+  link.href = 'your-stylesheet.css';
+  document.getElementsByTagName('head')[0].appendChild(link);
+}
+~~~
+
+* So far as I'm aware it's not possible to disable JS in UCBrowser or Opera Mini, so if the 'sniffs' are placed in HTML rather than an external file, things aren't likely to go wrong.
+
+
+IE8 (uses conditional comments)
+~~~
+<!--[if IE 8]>
+<link rel="stylesheet" href="css/your-stylesheet.css">
+<![endif]-->
+~~~
