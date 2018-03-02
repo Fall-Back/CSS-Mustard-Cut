@@ -77,6 +77,8 @@ The EM2 Cut (Even More Modern)
 ">
 ~~~
 
+[Can I Use](https://caniuse.com/#compare=edge+12,firefox+47,chrome+39,safari+9,opera+26,ios_saf+9.0-9.2,android+62)
+
 [Test page](http://fall-back.github.io/test/support-em2.html)
 
 ---
