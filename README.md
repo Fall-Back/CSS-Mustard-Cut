@@ -37,7 +37,7 @@ The M3 Cut (Much More Modern)
     IE 10, 11
     Edge
     Chrome 29+, Opera 16+, Safari 6.1+, iOS 7+, Android ~4.4+
-    FF29+
+    FF 29+
 -->
 <link rel="stylesheet" href="your-stylesheet.css" media="
     only print,
@@ -65,7 +65,7 @@ The EM2 Cut (Even More Modern)
 <!--
     Print (Edge doesn't apply to print otherwise)
     Edge, Chrome 39+, Opera 26+, Safari 9+, iOS 9+, Android ~5+*, Android UCBrowser 11.8+**
-    FF47+
+    FF 47+
 
     *  (according to caniuse, though it works on ~4.3+ if using Chrome or Samsung)
     ** (according to caniuse though currently untested. Does not work on Android UCBrowser 11.3.2)
@@ -98,7 +98,7 @@ only print
 
 IE 9+, FF 8+, Opera 12, Chrome 29+, Android ~4.4+
 ~~~
-only screen and (min-resolution: 0.1dpcm),
+only screen and (min-resolution: 0.1dpcm)
 ~~~
 
 
@@ -117,17 +117,17 @@ Edge, Chrome 39+, Opera 26+, Safari 9+, iOS 9+, Android ~5+*, Android UCBrowser 
 *  (according to caniuse, though it works on ~4.3+ if using Chrome or Samsung)
 ** (according to caniuse though currently untested. Does not work on Android UCBrowser 11.3.2)
 ~~~
-only all and (pointer: fine), only all and (pointer: coarse), only all and (pointer: none),
+only all and (pointer: fine), only all and (pointer: coarse), only all and (pointer: none)
 ~~~
 
 
-FF29+
+FF 29+
 ~~~
 only all and (min--moz-device-pixel-ratio:0) and (min-resolution: 3e1dpcm)
 ~~~
 
 
-FF47+
+FF 47+
 ~~~
 only all and (min--moz-device-pixel-ratio:0) and (display-mode:browser), (min--moz-device-pixel-ratio:0) and (display-mode:fullscreen)
 ~~~
