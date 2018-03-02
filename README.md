@@ -160,6 +160,6 @@ if (navigator.userAgent.indexOf('Opera Mini') > -1 || navigator.userAgent.indexO
 IE8 (uses conditional comments)
 ~~~
 <!--[if IE 8]>
-<link rel="stylesheet" href="css/your-stylesheet.css">
+<link rel="stylesheet" href="your-stylesheet.css">
 <![endif]-->
 ~~~
