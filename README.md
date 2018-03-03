@@ -156,7 +156,7 @@ if (navigator.userAgent.indexOf('Opera Mini') > -1 || navigator.userAgent.indexO
 }
 ~~~
 
-* So far as I'm aware it's not possible to disable JS in UCBrowser or Opera Mini, so if the 'sniffs' are placed in HTML rather than an external file, things aren't likely to go wrong.
+*So far as I'm aware it's not possible to disable JS in UCBrowser or Opera Mini, so if the 'sniffs' are placed in HTML rather than an external file, things aren't likely to go wrong.
 
 
 IE8 (uses conditional comments)
