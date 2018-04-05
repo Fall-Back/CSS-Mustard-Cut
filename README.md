@@ -142,6 +142,8 @@ if (navigator.userAgent.indexOf('UCBrowser') > -1) {
   link.rel  = 'stylesheet';
   link.href = 'your-stylesheet.css';
   document.getElementsByTagName('head')[0].appendChild(link);
+  // You may also want to add a class to be able to target these browsers in CSS:
+  document.getElementsByTagName('html')[0].className += ' ucbrowser';
 }
 ~~~
 
