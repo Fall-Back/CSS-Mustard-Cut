@@ -18,7 +18,7 @@ The Original Cut
 <!--
     IE 9+, FF 8+, Opera 12, Chrome 29+, Android ~4.4+
     Chrome 29+, Opera 16+, Safari 6.1+, iOS 7+, Android ~4.4+
-->
+-->
 <link rel="stylesheet" href="your-stylesheet.css" media="
     only screen and (min-resolution: 0.1dpcm),
     only screen and (-webkit-min-device-pixel-ratio:0) and (min-color-index:0)
