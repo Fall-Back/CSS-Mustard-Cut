@@ -64,11 +64,8 @@ The EM2 Cut (Even More Modern)
 ~~~
 <!--
     Print (Edge doesn't apply to print otherwise)
-    Edge, Chrome 39+, Opera 26+, Safari 9+, iOS 9+, Android ~5+*, Android UCBrowser 11.8+**
+    Edge, Chrome 39+, Opera 26+, Safari 9+, iOS 9+, Android ~5+, Android UCBrowser ~11.8+
     FF 47+
-
-    *  (according to caniuse, though it works on ~4.3+ if using Chrome or Samsung)
-    ** (according to caniuse though currently untested. Does not work on Android UCBrowser 11.3.2)
 -->
 <link rel="stylesheet" href="your-stylesheet.css" media="
     only print,
@@ -80,6 +77,10 @@ The EM2 Cut (Even More Modern)
 [Can I Use](https://caniuse.com/#compare=edge+12,firefox+47,chrome+39,safari+9,opera+26,ios_saf+9.0-9.2,android+62)
 
 [Test page](http://fall-back.github.io/test/support-em2.html)
+
+Note that:
+* Android ~5+ is according to caniuse, though it works on ~4.3+ if using Chrome or Samsung
+* Android UCBrowser 11.8+ is according to caniuse though currently untested. Does not work on Android UCBrowser 11.3.2
 
 ---
 
