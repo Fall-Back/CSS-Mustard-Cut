@@ -14,7 +14,7 @@ Please raise issues for any problems, ideas or 'cuts'.
 
 The Original Cut
 ----------------
-~~~
+~~~html
 <!--
     IE 9+, FF 8+, Opera 12, Chrome 29+, Android ~4.4+
     Chrome 29+, Opera 16+, Safari 6.1+, iOS 7+, Android ~4.4+
@@ -31,7 +31,7 @@ The Original Cut
 The M3 Cut (Much More Modern)
 -----------------------------
 
-~~~
+~~~html
 <!--
     Print (Edge doesn't apply to print otherwise)
     IE 10, 11
@@ -61,7 +61,7 @@ To remove IE 10 and 11 support, remove the 2nd line (`only all and (-ms-high-con
 The EM2 Cut (Even More Modern)
 ------------------------------
 
-~~~
+~~~html
 <!--
     Print (Edge doesn't apply to print otherwise)
     Edge, Chrome 39+, Opera 26+, Safari 9+, iOS 9+, Android ~5+, Android UCBrowser ~11.8+
@@ -94,50 +94,50 @@ Mix and Match
 For clarity, you can mix and match the queries for more customised support.
 
 Print
-~~~
+~~~css
 only print
 ~~~
 
 
 IE 9+, FF 8+, Opera 12, Chrome 29+, Android ~4.4+
-~~~
+~~~css
 only screen and (min-resolution: 0.1dpcm)
 ~~~
 
 
 Chrome 29+, Opera 16+, Safari 6.1+, iOS 7+, Android ~4.4+
-~~~
+~~~css
 only screen and (-webkit-min-device-pixel-ratio:0) and (min-color-index:0)
 ~~~
 
 
 IE 10, 11
-~~~
+~~~css
 only all and (-ms-high-contrast: none), only all and (-ms-high-contrast: active)
 ~~~
 
 Edge, Chrome 39+, Opera 26+, Safari 9+, iOS 9+, Android ~5+*, Android UCBrowser 11.8+**
 *  (according to caniuse, though it works on ~4.3+ if using Chrome or Samsung)
 ** (according to caniuse though currently untested. Does not work on Android UCBrowser 11.3.2)
-~~~
+~~~css
 only all and (pointer: fine), only all and (pointer: coarse), only all and (pointer: none)
 ~~~
 
 
 FF 29+
-~~~
+~~~css
 only all and (min--moz-device-pixel-ratio:0) and (min-resolution: 3e1dpcm)
 ~~~
 
 
 FF 47+
-~~~
+~~~css
 only all and (min--moz-device-pixel-ratio:0) and (display-mode:browser), (min--moz-device-pixel-ratio:0) and (display-mode:fullscreen)
 ~~~
 
 
 UCBrowser (JS user-agent sniff*)
-~~~
+~~~javascript
 if (navigator.userAgent.indexOf('UCBrowser') > -1) {
   var link  = document.createElement('link');
   link.rel  = 'stylesheet';
@@ -150,7 +150,7 @@ if (navigator.userAgent.indexOf('UCBrowser') > -1) {
 
 
 Opera Mini (JS user-agent sniff*)
-~~~
+~~~javascript
 if (navigator.userAgent.indexOf('Opera Mini') > -1 || navigator.userAgent.indexOf('OPiOS') > -1) {
   var link  = document.createElement('link');
   link.rel  = 'stylesheet';
@@ -163,7 +163,7 @@ if (navigator.userAgent.indexOf('Opera Mini') > -1 || navigator.userAgent.indexO
 
 
 IE8 (uses conditional comments)
-~~~
+~~~html
 <!--[if IE 8]>
 <link rel="stylesheet" href="your-stylesheet.css">
 <![endif]-->
