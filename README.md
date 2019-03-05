@@ -117,8 +117,10 @@ only all and (-ms-high-contrast: none), only all and (-ms-high-contrast: active)
 ~~~
 
 Edge, Chrome 39+, Opera 26+, Safari 9+, iOS 9+, Android ~5+*, Android UCBrowser 11.8+**
-*  (according to caniuse, though it works on ~4.3+ if using Chrome or Samsung)
-** (according to caniuse though currently untested. Does not work on Android UCBrowser 11.3.2)
+
+[*]  (according to caniuse, though it works on ~4.3+ if using Chrome or Samsung)
+
+[**] (according to caniuse though currently untested. Does not work on Android UCBrowser 11.3.2)
 ~~~css
 only all and (pointer: fine), only all and (pointer: coarse), only all and (pointer: none)
 ~~~
@@ -159,7 +161,7 @@ if (navigator.userAgent.indexOf('Opera Mini') > -1 || navigator.userAgent.indexO
 }
 ~~~
 
-*So far as I'm aware it's not possible to disable JS in UCBrowser or Opera Mini, so if the 'sniffs' are placed in HTML rather than an external file, things aren't likely to go wrong.
+[*] So far as I'm aware it's not possible to disable JS in UCBrowser or Opera Mini, so if the 'sniffs' are placed in HTML rather than an external file, things aren't likely to go wrong.
 
 
 IE8 (uses conditional comments)
