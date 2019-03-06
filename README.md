@@ -65,8 +65,8 @@ I recently descovered that the Edge print fix for the M3 cut actually let IE9 th
 
 ~~~html
 <!--
-    Print (Edge doesn't apply to print otherwise)
-    IE 9, 10, 11
+    Print (Edge doesn't apply to print otherwise), IE9
+    IE 10, 11
     Edge
     Chrome 29+, Opera 16+, Safari 6.1+, iOS 7+, Android ~4.4+
     FF 29+
