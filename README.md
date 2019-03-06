@@ -56,6 +56,29 @@ To remove IE 10 and 11 support, remove the 2nd line (`only all and (-ms-high-con
 
 <s>Note that if you're combining the links media queries into one I tried putting in line breaks to make it more readable, but this cause IE9 to ignore the query and apply the styles, so DON'T ADD LINE BREAKS.</s>
  - For some reason I can't recreate the above. Something else may have been the cause of this problem.
+ 
+
+M3+9
+----
+
+I recently descovered that the Edge print fix for the M3 cut actually let IE9 through, so if you need IE9+ support (instead of 10+), then use this:
+
+~~~html
+<!--
+    Print (Edge doesn't apply to print otherwise)
+    IE 9, 10, 11
+    Edge
+    Chrome 29+, Opera 16+, Safari 6.1+, iOS 7+, Android ~4.4+
+    FF 29+
+-->
+<link rel="stylesheet" href="your-stylesheet.css" media="
+    only print,
+    only all and (-ms-high-contrast: none), only all and (-ms-high-contrast: active),
+    only all and (pointer: fine), only all and (pointer: coarse), only all and (pointer: none),
+    only all and (-webkit-min-device-pixel-ratio:0) and (min-color-index:0),
+    only all and (min--moz-device-pixel-ratio:0) and (min-resolution: 3e1dpcm)
+">
+~~~
 
 
 The EM2 Cut (Even More Modern)
