@@ -40,7 +40,7 @@ The M3 Cut (Much More Modern)
     FF 29+
 -->
 <link rel="stylesheet" href="your-stylesheet.css" media="
-    only print,
+    only print, screen and (min-width: 1vm),
     only all and (-ms-high-contrast: none), only all and (-ms-high-contrast: active),
     only all and (pointer: fine), only all and (pointer: coarse), only all and (pointer: none),
     only all and (-webkit-min-device-pixel-ratio:0) and (min-color-index:0),
