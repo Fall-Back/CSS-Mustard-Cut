@@ -194,3 +194,11 @@ IE8 (uses conditional comments)
 <link rel="stylesheet" href="your-stylesheet.css">
 <![endif]-->
 ~~~
+
+Mentions / Usage
+----------------
+
+* https://www.smashingmagazine.com/2019/03/web-on-internet-explorer-ie8/
+
+
+* https://github.com/springernature/frontend-playbook/blob/master/practices/graded-browser-support.md
