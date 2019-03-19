@@ -198,6 +198,7 @@ IE8 (uses conditional comments)
 Mentions / Usage
 ----------------
 
+* https://alistapart.com/article/the-slow-death-of-internet-explorer-and-future-of-progressive-enhancement
 * https://www.smashingmagazine.com/2019/03/web-on-internet-explorer-ie8/
 
 
