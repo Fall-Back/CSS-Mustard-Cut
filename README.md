@@ -111,6 +111,7 @@ Note the Android versions aren't certain because it actually depends on the WebK
 
 ---
 
+
 Mix and Match
 -------------
 
@@ -195,11 +196,15 @@ IE8 (uses conditional comments)
 <![endif]-->
 ~~~
 
-Mentions / Usage
-----------------
+
+Mentions
+--------
 
 * https://alistapart.com/article/the-slow-death-of-internet-explorer-and-future-of-progressive-enhancement
 * https://www.smashingmagazine.com/2019/03/web-on-internet-explorer-ie8/
 
+
+Usage
+-----
 
 * https://github.com/springernature/frontend-playbook/blob/master/practices/graded-browser-support.md
