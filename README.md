@@ -1,7 +1,7 @@
 CSS Only Mustard Cut
 ====================
 
-Cutting the Mustard without Javascript.
+Cutting the Mustard without Javascript. Also known as CSSCTM (CSS Cut-the-Mustard).
 
 Read the [SitePoint article](http://www.sitepoint.com/cutting-the-mustard-with-css-media-queries/).
 
