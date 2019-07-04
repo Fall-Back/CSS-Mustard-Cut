@@ -27,6 +27,8 @@ The Original Cut
 
 [Test page](http://fall-back.github.io/test/support.html)
 
+Edge fails with the line breaks in place. **Remove line breaks in production.**
+
 
 The M3 Cut (Much More Modern)
 -----------------------------
