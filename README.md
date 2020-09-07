@@ -63,7 +63,7 @@ To remove IE 10 and 11 support, remove the 2nd line (`only all and (-ms-high-con
 M3+9
 ----
 
-I recently descovered that the Edge print fix for the M3 cut actually let IE9 through, so if you need IE9+ support (instead of 10+), then use this:
+I recently discovered that the Edge print fix for the M3 cut actually let IE9 through, so if you need IE9+ support (instead of 10+), then use this:
 
 ~~~html
 <!--
