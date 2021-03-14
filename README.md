@@ -137,7 +137,7 @@ PRM Cut (Prefers Reduced Motion)
 ~~~html
 <!--
     Print (Edge doesn't apply to print otherwise)
-    ...  
+    Edge 79+, Chrome 74+, Firefox 63+, Opera 64+, Safari 10.1+, iOS 10.3+, Android 81+  
 -->
 <link rel="stylesheet" href="your-stylesheet.css" media="
     only print,
