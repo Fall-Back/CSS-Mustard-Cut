@@ -122,10 +122,26 @@ TNG Cut (The Next Generation)
     Edge 79+, Chrome 58+, Opera 45+, Safari 10+, iOS 10+, Android Webview/Chrome 58+, Samsung Internet
     FF 47+
 -->
-<link rel="stylesheet" href="/templates/npeu6/css/theme-npeu.1606235156.min.css" media="
+<link rel="stylesheet" href="your-stylesheet.css" media="
     only print, screen and (min-width: 1vm),
     only all and (color-gamut: srgb), only all and (color-gamut: p3), only all and (color-gamut: rec2020),
     only all and (min--moz-device-pixel-ratio:0) and (display-mode:browser), (min--moz-device-pixel-ratio:0) and (display-mode:fullscreen)
+">
+~~~
+
+---
+
+PRM Cut (Prefers Reduced Motion)
+-----------------------------
+
+~~~html
+<!--
+    Print (Edge doesn't apply to print otherwise)
+    ...  
+-->
+<link rel="stylesheet" href="your-stylesheet.css" media="
+    only print,
+    only all and (prefers-reduced-motion: no-preference), only all and (prefers-reduced-motion: reduce)
 ">
 ~~~
 
