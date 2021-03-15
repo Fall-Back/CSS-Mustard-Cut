@@ -145,6 +145,10 @@ PRM Cut (Prefers Reduced Motion)
 ">
 ~~~
 
+[Can I Use](https://caniuse.com/?compare=edge+79,firefox+63,chrome+74,safari+10.1,opera+64,ios_saf+10.3,android+81,and_chr+89,and_ff+86,samsung+11.1-11.2)
+
+[Test page](http://fall-back.github.io/test/support-prm.html)
+
 ---
 
 Mix and Match
