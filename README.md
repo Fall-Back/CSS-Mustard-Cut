@@ -151,6 +151,28 @@ PRM Cut (Prefers Reduced Motion)
 
 ---
 
+PCS Cut (Prefers Color Scheme)
+-----------------------------
+
+~~~html
+<!--
+    Print (Edge doesn't apply to print otherwise)
+    Edge 79+, Chrome 76+, Firefox 67+, Opera 62+, Safari 12.1+, iOS 13+, Android 91+
+-->
+<link rel="stylesheet" href="mq-test.css" media="
+    only print,
+    only all and (prefers-color-scheme: no-preference),
+    only all and (prefers-color-scheme: light),
+    only all and (prefers-color-scheme: dark)
+">
+~~~
+
+[Can I Use](https://caniuse.com/?compare=edge+79,firefox+63,chrome+74,safari+10.1,opera+64,ios_saf+10.3,android+81,and_chr+89,and_ff+86,samsung+11.1-11.2&compareCats=CSS)
+
+[Test page](http://fall-back.github.io/test/support-pcs.html)
+
+---
+
 Mix and Match
 -------------
 
