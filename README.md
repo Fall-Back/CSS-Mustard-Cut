@@ -58,7 +58,7 @@ To remove IE 10 and 11 support, remove the 2nd line (`only all and (-ms-high-con
 
 <s>Note that if you're combining the links media queries into one I tried putting in line breaks to make it more readable, but this cause IE9 to ignore the query and apply the styles, so DON'T ADD LINE BREAKS.</s>
  - For some reason I can't recreate the above. Something else may have been the cause of this problem.
- 
+
 
 M3+9
 ----
@@ -137,7 +137,7 @@ PRM Cut (Prefers Reduced Motion)
 ~~~html
 <!--
     Print (Edge doesn't apply to print otherwise)
-    Edge 79+, Chrome 74+, Firefox 63+, Opera 64+, Safari 10.1+, iOS 10.3+, Android 81+  
+    Edge 79+, Chrome 74+, Firefox 63+, Opera 64+, Safari 10.1+, iOS 10.3+, Android 81+
 -->
 <link rel="stylesheet" href="your-stylesheet.css" media="
     only print,
@@ -170,6 +170,31 @@ PCS Cut (Prefers Color Scheme)
 [Can I Use](https://caniuse.com/?compare=edge+79,firefox+63,chrome+74,safari+10.1,opera+64,ios_saf+10.3,android+81,and_chr+89,and_ff+86,samsung+11.1-11.2&compareCats=CSS)
 
 [Test page](http://fall-back.github.io/test/support-pcs.html)
+
+---
+
+PC Cut (Prefers Contrast)
+-----------------------------
+
+~~~html
+<!--
+    Print (Edge doesn't apply to print otherwise)
+    Edge 79+, Chrome 76+, Firefox 67+, Opera 62+, Safari 12.1+, iOS 13+, Android 91+
+-->
+<link rel="stylesheet" href="mq-test.css" media="
+    only print,
+    only all and (prefers-contrast: no-preference),
+    only all and (prefers-contrast: more),
+    only all and (prefers-contrast: less),
+    only all and (prefers-contrast: custom)
+">
+~~~
+
+[Can I Use](https://caniuse.com/?compare=chrome+96,edge+96,safari+14.1,firefox+101,opera+82,and_chr+119,ios_saf+14.5-14.8,samsung+17.0,android+119,and_ff+119&compareCats=CSS)
+
+[Test page](http://fall-back.github.io/test/support-ps.html)
+
+Note I've been unable to verify the cut-off for Android as BrowserStack devices all work despite reported browser versions.
 
 ---
 
