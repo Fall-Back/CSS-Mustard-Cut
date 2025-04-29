@@ -294,3 +294,29 @@ Usage
 -----
 
 * https://github.com/springernature/frontend-playbook/blob/master/practices/graded-browser-support.md
+
+
+---
+
+Other Techniques
+----------------
+
+### TLS
+
+All websites should by now be serving the pages over https. A security certificate is crucial in the modern age, but older browser do not support TLS and will refuse to load the page.
+This can be considered a natural 'cut' and can be factored in to your fallback support strategy without having to add any extra code.
+
+[TLS 1.1](https://caniuse.com/tls1-1) is deprecated so shouldn't really be used, but [TLS 1.2](https://caniuse.com/tls1-2) and [TLS 1.3](https://caniuse.com/tls1-3) are stilll current (at time of writing) so if you're serving your site over these, use the CSS support tables as your starting point for your CSS 'cut'. You may find it's the only 'cut' you need.
+
+
+### Feature Queries
+
+Whilst it should be common practice to wrap bleeding-edge CSS in `@supports` blocks and provide sensible fallbacks for non-supporting browsers, it's possible to wrap your *entire* CSS in one, to bump up the baseline of browsers you're supporting. So for example if your layouts rely heavily on CSS subgrid and everything else is more widely supported, you can wrap all your CSS in a block like this:
+
+```
+@supports (grid-template-columns: subgrid) {
+    /* all your CSS here */
+}
+```
+
+Then [non-supporting](https://caniuse.com/css-subgrid) (older) browsers will be cut and you won't have to worry about them looking all broken (so long as you've followed the FallBack Philosophy and coded your HTML nicely (properly)).
